@@ -250,3 +250,30 @@ Home Section
 .view-more button:hover {
     background-color: #555;
 }
+
+
+
+/* ================================
+ เพิ่มปุ่ม
+================================== */
+.button-container {
+    display: flex;
+    justify-content: center; /* จัดปุ่มให้อยู่ตรงกลางแนวนอน */
+    align-items: center;    /* จัดปุ่มให้อยู่ตรงกลางแนวตั้ง */
+  }
+  
+  .btn-about {
+    background-color: #456bcd;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+  }
+  
+  .btn-about:hover {
+    background-color: #1a1e89;
+  }
+  
