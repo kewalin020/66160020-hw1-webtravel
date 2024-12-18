@@ -118,3 +118,80 @@ header {
   text-decoration: none;
   font-size: 16px;
 }
+
+/* ================================
+Contact Section
+================================== */
+#contact {
+    display: flex;
+    justify-content: center; /* จัดให้อยู่กลางหน้าจอในแนวนอน */
+    align-items: center; /* จัดให้อยู่กลางหน้าจอในแนวตั้ง */
+    gap: 40px; /* ระยะห่างระหว่าง contact-text และ contact-from */
+    margin: 0 auto; /* จัดให้อยู่กลางโดยรวม */
+    padding: 50px 10px; /* ระยะห่างด้านบนและล่าง */
+    background-color: #ffffff; /* สีพื้นหลัง */
+    margin-left: 200px; /* เพิ่มระยะห่างด้านขวาของกรอบ */
+    margin-right: 150px; /* เพิ่มระยะห่างด้านขวาของกรอบ */
+}
+
+.contact-from {
+    background-color: #f4f4f4; /* สีพื้นหลัง */
+    padding: 40px;
+    max-width: 900px; /* ความกว้างของฟอร์ม */
+    margin-left: auto; /* ชิดขวา */
+    border-radius: 5px; /* มุมโค้ง */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เงาบางๆ */
+    margin-top: 70px; /* เพิ่มระยะห่างด้านบนของกรอบ */
+    margin-right: 200px; /* เพิ่มระยะห่างด้านขวาของกรอบ */
+    
+}
+#contact h2 {
+    text-align: center; /* จัดหัวข้อให้อยู่กลาง */
+    margin-bottom: 20px;
+}
+
+.contact-text h1 {
+    font-size: 3rem;
+    text-align: center; 
+    margin-bottom: 20px;
+}
+.contact-text p {
+    font-size: 1.5rem;
+    text-align: left; 
+    margin-bottom: 20px;
+}
+  
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+  
+label {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    margin-bottom: 9px;
+}
+  
+input, textarea {
+    
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    border: 1px solid #ddd;
+}
+  
+button {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #456bcd;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+  
+button:hover {
+    background-color: #1a1e89;
+}
+  
