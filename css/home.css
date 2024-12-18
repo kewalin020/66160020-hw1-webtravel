@@ -1,0 +1,72 @@
+/* ======================= 
+ General Styles
+======================= */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    overflow-x: hidden; /* ปิดการเลื่อนแนวนอน */
+}
+
+/* =======================
+Header Styling
+======================= */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: rgb(2, 2, 2);
+    z-index: 1000;
+    padding: 10px 0;
+    background-color: #4B5945; /* เพิ่มพื้นหลังให้ header */
+    justify-content: space-between;
+    display: flex; /* ใช้ flexbox เพื่อจัดวางเนื้อหาภายใน header */
+    flex-direction: column; /* จัดโลโก้และเมนูให้อยู่ในแนวตั้ง */
+    align-items: center; /* จัดให้อยู่ตรงกลาง */
+    justify-content: center;
+}
+
+.logo {
+    color: #ffffff;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center; /* จัดข้อความในโลโก้ให้อยู่ตรงกลาง */
+    margin-bottom: 10px; /* เพิ่มระยะห่างระหว่างโลโก้และเมนู */
+    padding-top: 0px;
+    padding-bottom: 20px; /* เพิ่มระยะห่างจากเส้นกั้นด้านล่าง */
+    border-bottom: 2px solid #66785F; /* เส้นกั้นระหว่าง logo และ nav */
+}
+/* =======================
+   navbar
+======================= */
+/* Navbar */
+.navbar {
+    flex: 1; /* กำหนดพื้นที่ยืดหยุ่น */
+    display: flex; /* ใช้ flexbox */
+    justify-content: flex-end; /* จัดเมนูให้ชิดขวา */
+    text-align: right; /* จัดข้อความในโลโก้ให้อยู่ตรงกลาง */
+  }
+  
+  /* เมนูลิงก์ */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem; /* ระยะห่างระหว่างเมนู */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #e5c847;
+  }
