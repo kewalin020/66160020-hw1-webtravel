@@ -88,3 +88,36 @@ header {
     padding: 0.5rem; /* เพิ่มพื้นที่คลิกให้กับไอคอน */
     color: #f8f8f8;
 }
+
+/* เมนู */
+.menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: rgba(241, 235, 235, 0.9);
+    z-index: 5;
+}
+  
+.hamburger-toggle:checked + .hamburger-icon + .menu {
+    display: block;
+}
+  
+.menu ul {
+    list-style: none;
+    margin-top: 50px;
+    text-align: center;
+}
+  
+.menu li {
+    margin: 20px 0;
+}
+  
+.menu a {
+    color: rgb(14, 14, 14);
+    text-decoration: none;
+    font-size: 16px;
+}
+  
