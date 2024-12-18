@@ -1,0 +1,235 @@
+/* ======================= 
+General Styles
+======================= */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* =======================
+Header Styling
+======================= */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 0;
+    background-color: #4B5945; /* เพิ่มพื้นหลังให้ header */
+    justify-content: space-between;
+    display: flex; /* ใช้ flexbox เพื่อจัดวางเนื้อหาภายใน header */
+    flex-direction: column; /* จัดโลโก้และเมนูให้อยู่ในแนวตั้ง */
+    align-items: center; /* จัดให้อยู่ตรงกลาง */
+    justify-content: center;
+}
+
+.logo {
+    color: #ffffff;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center; /* จัดข้อความในโลโก้ให้อยู่ตรงกลาง */
+    margin-bottom: 10px; /* เพิ่มระยะห่างระหว่างโลโก้และเมนู */
+    padding-top: 0px;
+    padding-bottom: 20px; /* เพิ่มระยะห่างจากเส้นกั้นด้านล่าง */
+    border-bottom: 2px solid #66785F; /* เส้นกั้นระหว่าง logo และ nav */
+}
+/* =======================
+   navbar
+======================= */
+/* Navbar */
+.navbar {
+  flex: 1; /* กำหนดพื้นที่ยืดหยุ่น */
+  display: flex; /* ใช้ flexbox */
+  justify-content: flex-end; /* จัดเมนูให้ชิดขวา */
+  text-align: right; /* จัดข้อความในโลโก้ให้อยู่ตรงกลาง */
+}
+
+/* เมนูลิงก์ */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem; /* ระยะห่างระหว่างเมนู */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #fcfcfc;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #e5c847;
+}
+/* =======================
+   Hamburger Menu
+======================== */
+/* เมนูแฮมเบอร์เกอร์ */
+.hamburger-toggle {
+  display: none;
+}
+
+.hamburger-icon {
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute; /* ทำให้ตำแหน่งอยู่กับขอบซ้าย */
+  left: 0; /* ชิดซ้าย */
+  z-index: 10; /* เลเยอร์ให้อยู่ด้านบน */
+  padding: 0.5rem; /* เพิ่มพื้นที่คลิกให้กับไอคอน */
+  color: #fefefe;
+}
+
+/* เมนู */
+.menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: rgba(241, 235, 235, 0.9);
+  z-index: 5;
+}
+
+.hamburger-toggle:checked + .hamburger-icon + .menu {
+  display: block;
+}
+
+.menu ul {
+  list-style: none;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.menu li {
+  margin: 20px 0;
+}
+
+.menu a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* ================================
+Contact Section
+================================== */
+#contact {
+    display: flex;
+    justify-content: center; /* จัดให้อยู่กลางหน้าจอในแนวนอน */
+    align-items: center; /* จัดให้อยู่กลางหน้าจอในแนวตั้ง */
+    gap: 40px; /* ระยะห่างระหว่าง contact-text และ contact-from */
+    margin: 0 auto; /* จัดให้อยู่กลางโดยรวม */
+    padding: 50px 10px; /* ระยะห่างด้านบนและล่าง */
+    background-color: #ffffff; /* สีพื้นหลัง */
+    margin-left: 200px; /* เพิ่มระยะห่างด้านขวาของกรอบ */
+    margin-right: 150px; /* เพิ่มระยะห่างด้านขวาของกรอบ */
+}
+
+.contact-from {
+    background-color: #f4f4f4; /* สีพื้นหลัง */
+    padding: 40px;
+    max-width: 900px; /* ความกว้างของฟอร์ม */
+    margin-left: auto; /* ชิดขวา */
+    border-radius: 5px; /* มุมโค้ง */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เงาบางๆ */
+    margin-top: 70px; /* เพิ่มระยะห่างด้านบนของกรอบ */
+    margin-right: 200px; /* เพิ่มระยะห่างด้านขวาของกรอบ */
+    
+}
+#contact h2 {
+    text-align: center; /* จัดหัวข้อให้อยู่กลาง */
+    margin-bottom: 20px;
+}
+
+.contact-text h1 {
+    font-size: 3rem;
+    text-align: center; 
+    margin-bottom: 20px;
+}
+.contact-text p {
+    font-size: 1.5rem;
+    text-align: left; 
+    margin-bottom: 20px;
+}
+  
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+  
+label {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    margin-bottom: 9px;
+}
+  
+input, textarea {
+    
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    border: 1px solid #ddd;
+}
+  
+button {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #456bcd;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+  
+button:hover {
+    background-color: #1a1e89;
+}
+  
+
+/* ================================
+ Footer Styles
+================================== */
+footer {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 10px;
+    background: #000000;
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+}
+
+/* ================================
+Responsive Design
+================================== */
+@media (max-width: 768px) {
+    /* สำหรับหน้าจอเล็ก เช่น มือถือ */
+    #attractions {
+        flex-direction: column; /* เรียงเนื้อหาเป็นคอลัมน์ */
+    }
+
+    .menu {
+        flex-direction: column; /* เมนูเรียงในแนวตั้ง */
+    }
+
+    .menu li {
+        margin: 10px 0; /* ระยะห่างแต่ละลิงก์ */
+    }
+
+    .overlay-text h2 {
+        font-size: 1.8rem; /* ลดขนาดข้อความ */
+    }
+
+    .overlay-text p {
+        font-size: 1rem;
+    }
+}
