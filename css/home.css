@@ -288,3 +288,29 @@ footer {
     color: rgb(255, 250, 250);
     margin-top: 20px;
 }
+
+/* ================================
+ Responsive Design
+================================== */
+@media (max-width: 768px) {
+    /* สำหรับหน้าจอเล็ก เช่น มือถือ */
+    #attractions {
+        flex-direction: column; /* เรียงเนื้อหาเป็นคอลัมน์ */
+    }
+
+    .menu {
+        flex-direction: column; /* เมนูเรียงในแนวตั้ง */
+    }
+
+    .menu li {
+        margin: 10px 0; /* ระยะห่างแต่ละลิงก์ */
+    }
+
+    .overlay-text h2 {
+        font-size: 1.8rem; /* ลดขนาดข้อความ */
+    }
+
+    .overlay-text p {
+        font-size: 1rem;
+    }
+}
