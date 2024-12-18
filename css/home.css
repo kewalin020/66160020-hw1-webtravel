@@ -150,3 +150,103 @@ Home Section
     border-radius: 5px; /* ขอบมนเล็กน้อย */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* เงาบางๆ เพิ่มความสวยงาม */
 }
+
+
+/* =======================
+    Hilghlight  
+======================= */
+
+.hilghlight  h1 {
+    color: #4B5945;
+    font-size: 2rem;
+    margin: 10px 0;
+    text-align: center; 
+    font-weight: bold;
+}
+  
+.hilghlight p{
+    color: #4b5945b8;
+    font-size: 1rem;
+    margin: 10px 0;
+    text-align: center; 
+}
+  
+.package-container {
+    display: flex;
+    justify-content: center; /* จัดการ์ดให้อยู่ตรงกลาง */
+    gap: 20px; /* ระยะห่างระหว่างการ์ด */
+    flex-wrap: nowrap; /* ไม่ให้การ์ดขึ้นบรรทัดใหม่ */
+    overflow-x: auto; /* เพิ่ม Scrollbar แนวนอนเมื่อการ์ดเกินขนาดหน้าจอ */
+    padding: 20px;
+    margin-bottom: 110px; /* เพิ่มระยะห่างจาก header */
+}
+  
+  
+.package-card {
+    position: relative;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+  
+  .package-card img {
+    width: 100%;
+    height: auto;
+}
+  
+.package-header {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+  
+.package-info {
+    padding: 15px;
+}
+  
+.package-info p {
+    font-size: 0.9rem;
+    color: #888;
+    margin: 0 0 5px 0;
+}
+  
+.package-info h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+  
+.package-info span {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #000;
+}
+  
+.view-more {
+    margin: 20px 0;
+}
+  
+.view-more button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.view-more button:hover {
+    background-color: #555;
+}
