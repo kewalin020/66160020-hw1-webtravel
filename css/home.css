@@ -277,3 +277,14 @@ Home Section
     background-color: #1a1e89;
   }
   
+  /* ================================
+  Footer Styles
+================================== */
+footer {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 10px;
+    background: #000000;
+    color: rgb(255, 250, 250);
+    margin-top: 20px;
+}
