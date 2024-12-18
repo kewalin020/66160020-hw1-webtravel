@@ -121,3 +121,32 @@ header {
     font-size: 16px;
 }
   
+
+/* =======================
+Home Section 
+======================= */
+
+
+/* home Section */
+.home {
+    position: relative;
+    width: 100%;
+    height: auto; /* ความสูงปรับตามเนื้อหา */
+    display: flex;
+    justify-content: center; /* จัดกลางแนวนอน */
+    align-items: flex-start; /* จัดให้ชิดด้านบน */
+    padding: 1rem; /* ระยะห่างรอบขอบ */
+    background-color: #fff; /* ใส่พื้นหลังสีขาว */
+    margin-top: 110px; /* เพิ่มระยะห่างจาก header */
+    margin-bottom: 90px; /* เพิ่มระยะห่างจาก header */
+    border-bottom: 2px solid #ddd;
+}
+  
+.home img {
+    display: block;
+    max-width: 70%; /* รูปภาพไม่เกินความกว้างของหน้าจอ */
+    height: auto; /* รักษาอัตราส่วนภาพ */
+    margin: 0 auto; /* จัดกลางแนวนอน */
+    border-radius: 5px; /* ขอบมนเล็กน้อย */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* เงาบางๆ เพิ่มความสวยงาม */
+}
