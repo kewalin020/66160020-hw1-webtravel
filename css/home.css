@@ -70,3 +70,21 @@ header {
   .nav-links a:hover {
     color: #e5c847;
   }
+
+  /* =======================
+   Hamburger Menu
+======================== */
+/* เมนูแฮมเบอร์เกอร์ */
+.hamburger-toggle {
+    display: none;
+  }
+  
+.hamburger-icon {
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute; /* ทำให้ตำแหน่งอยู่กับขอบซ้าย */
+    left: 0; /* ชิดซ้าย */
+    z-index: 10; /* เลเยอร์ให้อยู่ด้านบน */
+    padding: 0.5rem; /* เพิ่มพื้นที่คลิกให้กับไอคอน */
+    color: #f8f8f8;
+}
