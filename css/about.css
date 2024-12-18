@@ -120,3 +120,84 @@ header {
   text-decoration: none;
   font-size: 16px;
 }
+
+
+/* ================================
+Attractions Section
+================================== */
+#attractions {
+    font-family: Arial, sans-serif; 
+    padding: 20px; 
+    text-align: center; 
+    margin: 0 auto; 
+    max-width: 1200px; 
+    padding-bottom: 20px; 
+    min-height: 100vh;
+    margin-top: 110px; /* เพิ่มระยะห่างจาก header */ 
+ }
+
+ .attraction-card {
+   display: flex;
+   flex-direction: row; 
+   border: 1px solid #ddd; 
+   border-radius: 10px; 
+   background-color: #fff; 
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+   margin: 20px auto; 
+   overflow: hidden; 
+   transition: transform 0.3s ease, box-shadow 0.3s ease; 
+   max-width: 1000px; 
+ }
+
+ .attraction-card:hover {
+   transform: translateY(-5px); 
+   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); 
+ }
+ 
+ 
+ .attraction-img-container {
+   flex: 1;   
+ }
+ 
+ 
+ .attraction-img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  display: block; 
+ }
+ 
+ 
+ .attraction-content {
+   flex: 1; 
+   padding: 20px; 
+   text-align: left; 
+   
+ }
+ 
+ 
+ .attraction-content h3 {
+   font-size: 22px; 
+   color: #1a1e89;
+   margin-bottom: 10px;
+   font-weight: bold; 
+ }
+ 
+ 
+ .attraction-content p {
+   font-size: 16px; 
+   color: #666; 
+   margin-bottom: 20px; 
+   line-height: 1.6; 
+ }
+
+/* ================================
+  Footer Styles
+================================== */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #000000;
+    color: rgb(255, 250, 250);
+    margin-top: 20px;
+}
